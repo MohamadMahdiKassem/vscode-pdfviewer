@@ -88,7 +88,7 @@
           ]
         },
         "pdf-preview.showFieldNames": {
-          "markdownDescription": "Label each form field with its key (the field name stored in the PDF).",
+          "markdownDescription": "Show form field keys (the field names stored in the PDF) when a PDF opens. The tag button in the toolbar toggles them.",
           "type": "boolean",
           "default": true
         }

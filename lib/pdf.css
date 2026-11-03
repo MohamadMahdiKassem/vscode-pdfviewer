@@ -13,6 +13,7 @@ html, body {
   height: 100%;
 }
 .annotationLayer .fieldNameLabel {
+  display: none;
   position: absolute;
   left: 0;
   bottom: 100%;
@@ -24,4 +25,14 @@ html, body {
   border-radius: 2px;
   pointer-events: none;
   z-index: 10;
+}
+.showFieldNames .annotationLayer .fieldNameLabel {
+  display: block;
+}
+#toggleFieldNames[hidden] {
+  display: none;
+}
+#toggleFieldNames::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 2a1 1 0 0 1 1-1h5.6L15 8.4 8.4 15 1 7.6zm3.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z'/%3E%3C/svg%3E");
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 2a1 1 0 0 1 1-1h5.6L15 8.4 8.4 15 1 7.6zm3.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z'/%3E%3C/svg%3E");
 }

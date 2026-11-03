@@ -396,6 +396,9 @@ export class PdfPreview extends Disposable {
 
                 <div id="editorModeSeparator" class="verticalToolbarSeparator"></div>
                 </div>
+                <button id="toggleFieldNames" class="toolbarButton" title="Show Field Keys" aria-pressed="false" hidden>
+                  <span>Field Keys</span>
+                </button>
                 <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="48" data-l10n-id="tools" aria-expanded="false" aria-controls="secondaryToolbar">
                   <span data-l10n-id="tools_label">Tools</span>
                 </button>
