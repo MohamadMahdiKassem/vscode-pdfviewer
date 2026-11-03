@@ -1,9 +1,9 @@
 {
-  "name": "pdf",
-  "displayName": "vscode-pdf",
-  "description": "Display pdf file in VSCode.",
-  "version": "1.2.2",
-  "publisher": "tomoki1207",
+  "name": "pdf-field-keys",
+  "displayName": "PDF Field Keys",
+  "description": "Display PDF files in VS Code and label each form field with its key. Fork of tomoki1207/vscode-pdfviewer.",
+  "version": "1.3.0",
+  "publisher": "MohamadMahdiKassem",
   "engines": {
     "vscode": "^1.46.0"
   },
@@ -12,18 +12,20 @@
   ],
   "keywords": [
     "pdf",
-    "viewer"
+    "viewer",
+    "form",
+    "acroform"
   ],
   "icon": "vscode-pdf.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tomoki1207/vscode-pdfviewer.git"
+    "url": "https://github.com/MohamadMahdiKassem/vscode-pdfviewer.git"
   },
   "bugs": {
-    "url": "https://github.com/tomoki1207/vscode-pdfviewer/issues"
+    "url": "https://github.com/MohamadMahdiKassem/vscode-pdfviewer/issues"
   },
   "activationEvents": [
-    "onCustomEditor:pdf.preview"
+    "onCustomEditor:pdfFieldKeys.preview"
   ],
   "main": "./out/src/extension",
   "contributes": {
@@ -34,8 +36,8 @@
     },
     "customEditors": [
       {
-        "viewType": "pdf.preview",
-        "displayName": "Pdf Preview",
+        "viewType": "pdfFieldKeys.preview",
+        "displayName": "PDF Field Keys",
         "selector": [
           {
             "filenamePattern": "*.pdf"

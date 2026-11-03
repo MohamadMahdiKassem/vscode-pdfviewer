@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.0 (2026/11/03)
+
+First release of the PDF Field Keys fork (`MohamadMahdiKassem.pdf-field-keys`).
+
+- Label each form field with its key, with a toolbar button to show or hide the labels
+- Search field keys: filter labels as you type, Enter and Shift+Enter jump between matches
+- Hovering a label brings it in front of overlapping labels, and clicking it acts on its field
+- New setting `pdf-preview.showFieldNames`
+- New extension ID and editor view type (`pdfFieldKeys.preview`), so it doesn't clash with the original
+
 ## 1.2.2 (2022/12/23)
 
 - Fix about rendering Unicode characters
