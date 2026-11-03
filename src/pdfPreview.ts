@@ -114,6 +114,7 @@ export class PdfPreview extends Disposable {
         scrollMode: config.get('default.scrollMode') as string,
         spreadMode: config.get('default.spreadMode') as string,
       },
+      showFieldNames: config.get('showFieldNames') as boolean,
     };
 
     const head = `<!DOCTYPE html>

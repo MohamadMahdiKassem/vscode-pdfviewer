@@ -86,6 +86,11 @@
             "odd",
             "even"
           ]
+        },
+        "pdf-preview.showFieldNames": {
+          "markdownDescription": "Label each form field with its key (the field name stored in the PDF).",
+          "type": "boolean",
+          "default": true
         }
       }
     }
