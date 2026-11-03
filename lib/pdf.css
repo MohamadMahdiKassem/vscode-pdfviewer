@@ -24,7 +24,7 @@ html, body {
   color: #fff;
   background: rgba(200, 30, 30, 0.8);
   border-radius: 2px;
-  pointer-events: none;
+  cursor: default;
   z-index: 10;
 }
 .showFieldNames .annotationLayer .fieldNameLabel {
@@ -39,6 +39,18 @@ html, body {
 /* Fades the label while you type in its field */
 .annotationLayer section:focus-within .fieldNameLabel {
   opacity: 0.2;
+}
+/* Hovering a field or its label darkens the label and lifts it above overlapping ones.
+   pdf.js sets an inline z-index on every field, hence !important. */
+.showFieldNames .annotationLayer section:hover {
+  z-index: 100000 !important;
+}
+.annotationLayer section:hover > .fieldNameLabel {
+  opacity: 1;
+  background: rgb(110, 0, 0);
+}
+.annotationLayer section:hover > .fieldNameLabel.currentMatch {
+  background: rgb(0, 50, 130);
 }
 #toggleFieldNames[hidden],
 #searchFieldNames[hidden] {
