@@ -15,8 +15,9 @@ html, body {
 .annotationLayer .fieldNameLabel {
   display: none;
   position: absolute;
-  left: 0;
-  bottom: 100%;
+  top: 50%;
+  left: 1px;
+  transform: translateY(-50%);
   padding: 0 3px;
   font: 10px/1.4 monospace;
   white-space: nowrap;
@@ -29,8 +30,39 @@ html, body {
 .showFieldNames .annotationLayer .fieldNameLabel {
   display: block;
 }
-#toggleFieldNames[hidden] {
+.showFieldNames .annotationLayer .fieldNameLabel.filteredOut {
   display: none;
+}
+.annotationLayer .fieldNameLabel.currentMatch {
+  background: rgba(0, 96, 223, 0.9);
+}
+/* Fades the label while you type in its field */
+.annotationLayer section:focus-within .fieldNameLabel {
+  opacity: 0.2;
+}
+#toggleFieldNames[hidden],
+#searchFieldNames[hidden] {
+  display: none;
+}
+#searchFieldNames::before {
+  -webkit-mask-image: url(web/images/toolbarButton-search.svg);
+          mask-image: url(web/images/toolbarButton-search.svg);
+}
+#fieldNameSearchBar {
+  position: absolute;
+  top: 32px;
+  inset-inline-end: 34px;
+  z-index: 30000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 2px;
+  padding: 0 6px;
+  font-size: 12px;
+  background-color: var(--doorhanger-bg-color);
+}
+#fieldNameSearchInput {
+  width: 180px;
 }
 #toggleFieldNames::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 2a1 1 0 0 1 1-1h5.6L15 8.4 8.4 15 1 7.6zm3.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z'/%3E%3C/svg%3E");

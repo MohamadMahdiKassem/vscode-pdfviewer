@@ -252,6 +252,11 @@ export class PdfPreview extends Disposable {
           </div>
         </div>
 
+        <div id="fieldNameSearchBar" class="doorHangerRight hidden">
+          <input id="fieldNameSearchInput" class="toolbarField" placeholder="Search field keys…" aria-label="Search field keys">
+          <span id="fieldNameSearchCount" class="toolbarLabel"></span>
+        </div>
+
         <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
           <div id="secondaryToolbarButtonContainer">
           <div style="display:none;">
@@ -398,6 +403,9 @@ export class PdfPreview extends Disposable {
                 </div>
                 <button id="toggleFieldNames" class="toolbarButton" title="Show Field Keys" aria-pressed="false" hidden>
                   <span>Field Keys</span>
+                </button>
+                <button id="searchFieldNames" class="toolbarButton" title="Search Field Keys" aria-expanded="false" aria-controls="fieldNameSearchBar" hidden>
+                  <span>Search Field Keys</span>
                 </button>
                 <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="48" data-l10n-id="tools" aria-expanded="false" aria-controls="secondaryToolbar">
                   <span data-l10n-id="tools_label">Tools</span>
