@@ -1,0 +1,28 @@
+lib/pdf.css
+  s_acf58c9998261c::t_5c28d349aa9455 18-20
+  s_acf58c9998261c::t_6a2218e7ffe699 33,36-47,50-66
+  s_acf58c9998261c::t_6fe43309aaff83 48-49
+src/pdfPreview.ts
+  s_acf58c9998261c::t_4e54c5ac9066cf 407-409
+  s_acf58c9998261c::t_b9bf250311f07a 255-259
+lib/main.js
+  s_acf58c9998261c::t_f68d2ace9ac0b0 174-186,190-192
+  s_acf58c9998261c::t_7f668c9e0bd655 112-113
+  s_acf58c9998261c::t_afd799da5ffc91 72-111,114-138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3111c6cd4dfce6db0efb65d0441c9094fb381aeb",
+  "prompts": {},
+  "sessions": {
+    "s_acf58c9998261c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f9916484-25ac-44ea-a545-593e95233474",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "MohamadMahdiKassem <mohamad@gtlogic.com>"
+    }
+  }
+}
